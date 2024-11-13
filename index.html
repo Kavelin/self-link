@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title> Self Link! ..</title>
+  </head>
+  <body>
+    <a id="link"></a><br>
+    <input placeholder="enter link here" id="inp" />
+    <script>
+      document.querySelector("#inp").addEventListener("keydown", e => {
+        document.querySelector("#link").href = document.querySelector("#link").innerText = event.currentTarget.value
+      })
+    </script>
+  </body>
+</html>
